@@ -1,0 +1,13 @@
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12">
+      <ul class="list-group-item">
+        <li *ngFor="let post of Posts" >
+          {{post.title}} -- {{post.created_at | date: 'short'}}
+          <p>{{post.content}}</p>
+          <app-post-list-item></app-post-list-item>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
