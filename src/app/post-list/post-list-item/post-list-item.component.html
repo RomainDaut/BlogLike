@@ -3,13 +3,11 @@
     <li [ngClass]="{'list-group-item': true,
                 'list-group-item-success': post.loveIts > 0,
                 'list-group-item-danger': post.loveIts < 0}">
-    <h3>{{post.title}}</h3>
-    <p>{{post.created_at | date:"short"}}</p>
-    <p>{{post.content}}</p>
-
+      <h3>{{post.title}} <small style="float: right" class="text-right">{{post.created_at | date:"short"}}</small></h3>
+      <p>{{post.content}}</p>
     <div>
-    <button class="btn-success" (click)="onLoveIt(this.post)">Love It</button>
-    <button class="btn-danger" (click)="onHateIt(this.post)">Hate It</button>
+    <button type= "button" class="btn btn-success" (click)="onLoveIt(this.post)">Love It</button>
+    <button type= "button" class="btn btn-danger"  (click)="onHateIt(this.post)">Hate It</button>
     </div>
     </li>
   </ul>
