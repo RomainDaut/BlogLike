@@ -9,14 +9,14 @@ export class AppComponent {
   title = "Mon Blog";
   post = [
     {
-      title: "Noël au balcon",
-      content: "Ce soir c'est le réveillon !",
+      title: "Croisiere sur le Tage",
+      content: "Awesome croisiere on the Tage, departure from Lisboa, arrival in Sexal",
       loveIts: 0,
-      created_at: new Date(2017, 11, 24, 18, 23, 31)
+      created_at: new Date(2019, 11, 24, 18, 23, 31)
     },
     {
-      title: "Bonne année !!!",
-      content: "Tout est dans le titre",
+      title: "Strip club Party",
+      content: "Stripclub party in Mafra...",
       loveIts: 0,
       created_at: new Date(2018, 0, 1, 9, 2, 18)
     },
