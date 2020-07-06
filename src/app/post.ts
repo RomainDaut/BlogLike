@@ -1,6 +1,6 @@
 export interface Post {
   title: string,
   content: string,
-  created_at: Date,
-  loveIts: number
+  loveIts: number,
+  created_at: Date
 }
