@@ -7,20 +7,20 @@ import {Post} from "../../post";
   styleUrls: ['./post-list-item.component.scss']
 })
 export class PostListItemComponent implements OnInit {
-  @Input() post: Post[];
+  @Input() post: Post;
 
   constructor() { }
 
   ngOnInit() {
   }
 
-  onLoveIt(post: Post[]){
-    post.loveIts++
-    console.log(post.loveIts)
+  onLoveIt(post: Post){
+    post.loveIts++;
+    console.log(post.loveIts);
   }
 
-  onHateIt(post: Post[]){
-    post.loveIts--;
-    console.log(post.loveIts)
+  onHateIt(post: Post){
+    post.loveIts--;;
+    console.log(post.loveIts);
   }
 }
